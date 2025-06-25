@@ -1,3 +1,4 @@
+import joblib
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -5,8 +6,6 @@ import json
 st.write("🚀 App started loading...")
 
 # Load the model and feature list
-
-import joblib
 model = joblib.load("model.joblib")
 
 with open("features.json", "r") as g:
